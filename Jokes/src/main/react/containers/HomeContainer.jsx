@@ -17,6 +17,9 @@ const HomeContainer = () => {
     
     return newJoke.randomJokeStatus === "SUCCESS" ? 
         <>
+            <div className="row justify-content-center">
+            <div className="card">
+            <div className="card-body">
             <JokeView 
                 jokeInfo={newJoke.randomJoke}
             />
@@ -24,6 +27,9 @@ const HomeContainer = () => {
                 <button type="button" className="btn btn-info" onClick={handleClick}>
                     Get Another Joke
                 </button>
+            </div>
+            </div>
+            </div>
             </div>
         </>
         
